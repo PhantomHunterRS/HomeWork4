@@ -3,19 +3,19 @@
     private static void Main(string[] args)
     {
         HomeWork x = new HomeWork();
-        ////Task 25
-        //Console.WriteLine("Input two numbers.the first number to be raised, the second number to what degree.separated by commas");
-        //int[] inputNumbers = Array.ConvertAll(Console.ReadLine().Split(","), int.Parse);
-        //Console.WriteLine(x.mathPows(inputNumbers[0], inputNumbers[1]));
-        ////Task27
-        //Console.WriteLine("Input a number to calculate the amount");
-        //string number = Console.ReadLine();
-        //Console.WriteLine(x.summNumbers(number));
-        ////Task29
-        //Console.WriteLine("Input a 8 numbers separated by commas");
-        //string numberStr = Console.ReadLine();
-        //int [] arrNumbers = x.arrayNumbers(numberStr);
-        //x.arrNumb(arrNumbers);
+        //Task 25
+        Console.WriteLine("Input two numbers.the first number to be raised, the second number to what degree.separated by commas");
+        int[] inputNumbers = Array.ConvertAll(Console.ReadLine().Split(","), int.Parse);
+        Console.WriteLine(x.mathPows(inputNumbers[0], inputNumbers[1]));
+        //Task27
+        Console.WriteLine("Input a number to calculate the amount");
+        string number = Console.ReadLine();
+        Console.WriteLine(x.summNumbers(number));
+        //Task29
+        Console.WriteLine("Input a 8 numbers separated by commas");
+        string numberStr = Console.ReadLine();
+        int[] arrNumbers = x.arrayNumbers(numberStr);
+        x.arrNumb(arrNumbers);
 
         // Домашнее задание 5
         HomeWork5 y = new HomeWork5();
