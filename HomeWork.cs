@@ -1,24 +1,36 @@
-﻿using System;
-
-internal class HomeWork
+﻿internal class HomeWork
 {
     private static void Main(string[] args)
     {
         HomeWork x = new HomeWork();
+        ////Task 25
+        //Console.WriteLine("Input two numbers.the first number to be raised, the second number to what degree.separated by commas");
+        //int[] inputNumbers = Array.ConvertAll(Console.ReadLine().Split(","), int.Parse);
+        //Console.WriteLine(x.mathPows(inputNumbers[0], inputNumbers[1]));
+        ////Task27
+        //Console.WriteLine("Input a number to calculate the amount");
+        //string number = Console.ReadLine();
+        //Console.WriteLine(x.summNumbers(number));
+        ////Task29
+        //Console.WriteLine("Input a 8 numbers separated by commas");
+        //string numberStr = Console.ReadLine();
+        //int [] arrNumbers = x.arrayNumbers(numberStr);
+        //x.arrNumb(arrNumbers);
 
-        //Task 25
-        Console.WriteLine("Input two numbers.the first number to be raised, the second number to what degree.separated by commas");
-        int[] inputNumbers = Array.ConvertAll(Console.ReadLine().Split(","), int.Parse);
-        Console.WriteLine(x.mathPows(inputNumbers[0], inputNumbers[1]));
-        //Task27
-        Console.WriteLine("Input a number to calculate the amount");
-        string number = Console.ReadLine();
-        Console.WriteLine(x.summNumbers(number));
-        //Task29
-        Console.WriteLine("Input a 8 numbers separated by commas");
-        string numberStr = Console.ReadLine();
-        int [] arrNumbers = x.arrayNumbers(numberStr);
-        x.arrNumb(arrNumbers);
+        // Домашнее задание 5
+        HomeWork5 y = new HomeWork5();
+        //Task34
+        int[] ints34 = y.fillingTheArray();
+        x.arrNumb(ints34);
+        Console.WriteLine(y.foundEvenNumbers(ints34));
+        //Task36
+        int[] ints36 = y.fillingTheArray2();
+        x.arrNumb(ints36);
+        Console.WriteLine(y.summOfOddElements(ints36));
+        //Task38
+        double[] ints38 = y.fillingTheArray3();
+        x.arrNumb(ints38);
+        Console.WriteLine(y.findMinMaxRezult(ints38));
 
     }
 
@@ -67,6 +79,27 @@ internal class HomeWork
             else
             {
                 arrString = arrString + "," + arr[i];
+            }
+        }
+        Console.WriteLine(arrString);
+    }
+    void arrNumb(double[] arr)
+    {
+        string arrString = "[";
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (i == arr.Length - 1)
+            {
+                arrString = arrString + ";" + arr[i] + "]";
+            }
+            else if (i == 0)
+            {
+                arrString = arrString + arr[i];
+            }
+
+            else
+            {
+                arrString = arrString + ";" + arr[i];
             }
         }
         Console.WriteLine(arrString);
