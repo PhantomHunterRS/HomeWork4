@@ -3,7 +3,6 @@
 internal class HomeWork6
     {
     // Task41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
-
     public int[] inputNumbers()
     {
         Console.WriteLine("Enter real numbers separated by a space");
@@ -52,5 +51,4 @@ internal class HomeWork6
         point[1] = (values[2] * ((values[3] - values[1]) / (double)(values[0] - values[2])) + values[2]);
         return point;
      }
-
 }

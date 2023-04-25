@@ -37,7 +37,7 @@ internal class HomeWork
         //// Домашнее задание 6
         HomeWork6 hw6 = new HomeWork6();
         //// Task41
-        //Console.WriteLine(hw6.countingPositiveNumbers(hw6.inputNumbers()));
+        Console.WriteLine(hw6.countingPositiveNumbers(hw6.inputNumbers()));
         // Task 43
         x.arrNumb(hw6.findTheIntersectionPoint(hw6.inputValues()));
 
