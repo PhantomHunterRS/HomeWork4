@@ -41,6 +41,19 @@ internal class HomeWork
         //// Task 43
         //x.arrNumb(hw6.findTheIntersectionPoint(hw6.inputValues()));
 
+        // HomeWork 7
+        // Task47
+        HomeWork7 hw7 = new HomeWork7();
+        int[,] inits47 = hw7.fillArray(hw7.createArray(10, 10));
+        hw7.printTwoArray(inits47);
+        // Task 50. 
+        Console.WriteLine("Enter the number you need to find in the array");
+        int inputNumber = Int32.Parse(Console.ReadLine());
+        hw7.foundNumberUser(inputNumber, inits47);
+        // Task 52. 
+        int[,] inits52 = hw7.fillArray(hw7.createArray(4, 7),0,30);
+        hw7.printTwoArray(inits52);
+        hw7.arithmeticMean(inits52);
     }
 
     //Task25 Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B
