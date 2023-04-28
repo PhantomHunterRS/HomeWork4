@@ -40,7 +40,6 @@ internal class HomeWork
         //Console.WriteLine(hw6.countingPositiveNumbers(hw6.inputNumbers()));
         //// Task 43
         //x.arrNumb(hw6.findTheIntersectionPoint(hw6.inputValues()));
-
     }
 
     //Task25 Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B
