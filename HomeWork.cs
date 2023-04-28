@@ -35,11 +35,11 @@ internal class HomeWork
         //Console.WriteLine(y.findMinMaxRezult(ints38));
 
         //// Домашнее задание 6
-        HomeWork6 hw6 = new HomeWork6();
+        //HomeWork6 hw6 = new HomeWork6();
         //// Task41
-        Console.WriteLine(hw6.countingPositiveNumbers(hw6.inputNumbers()));
-        // Task 43
-        x.arrNumb(hw6.findTheIntersectionPoint(hw6.inputValues()));
+        //Console.WriteLine(hw6.countingPositiveNumbers(hw6.inputNumbers()));
+        //// Task 43
+        //x.arrNumb(hw6.findTheIntersectionPoint(hw6.inputValues()));
 
     }
 
