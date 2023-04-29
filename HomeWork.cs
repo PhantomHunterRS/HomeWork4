@@ -4,7 +4,7 @@ internal class HomeWork
 {
     private static void Main(string[] args)
     {
-        HomeWork x = new HomeWork();
+        HomeWork x = new();
         ////Task 25
         //Console.WriteLine("Input two numbers.the first number to be raised, the second number to what degree.separated by commas");
         //int[] inputNumbers = Array.ConvertAll(Console.ReadLine().Split(","), int.Parse);
@@ -40,6 +40,12 @@ internal class HomeWork
         //Console.WriteLine(hw6.countingPositiveNumbers(hw6.inputNumbers()));
         //// Task 43
         //x.arrNumb(hw6.findTheIntersectionPoint(hw6.inputValues()));
+
+        // HomeWork 7
+        ////Task47
+        HomeWork7 hw7 = new HomeWork7();
+        hw7.printTwoArray(hw7.fillArray(hw7.createArray(10,10)));
+        
     }
 
     //Task25 Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B
