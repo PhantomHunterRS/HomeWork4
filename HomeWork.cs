@@ -56,7 +56,29 @@ internal class HomeWork
         //hw7.arithmeticMean(inits52);
 
         // HomeWork 8
-
+        // Task 54
+        HomeWork8 hw8 = new HomeWork8();
+        int[,] newArray8 = hw8.createTwoDimensionalArray(6, 5);
+        hw8.fillingAValues(newArray8, 15);
+        Console.WriteLine("New Array");
+        hw8.printTwoDimensionalArray(newArray8);
+        hw8.sortAllArray(newArray8);
+        Console.WriteLine("New Array sorting");
+        hw8.printTwoDimensionalArray(newArray8);
+        // Task 56
+        hw8.smallValue(hw8.amountValues(newArray8));
+        // Task 58
+        int[,] newArrayMatrix1 = hw8.createTwoDimensionalArray(2, 2);
+        int[,] newArrayMatrix2 = hw8.createTwoDimensionalArray(2, 2);
+        hw8.fillingAValues(newArrayMatrix1, 10);
+        hw8.fillingAValues(newArrayMatrix2, 10);
+        hw8.printTwoDimensionalArray(hw8.multiplicationMatrix(newArrayMatrix1, newArrayMatrix2));
+        // Task 60
+        int[,,] newArray3T = hw8.createThreeDimensionalArray();
+        hw8.printThreeDimensionalArray(hw8.fillingThreeDimensionalArray(newArray3T));
+        // Task 62
+        int[,] newArray62 = hw8.createTwoDimensionalArray(4, 4);
+        hw8.printTwoDimensionalArray0(hw8.fillingSpiral(newArray62));
     }
 
     //Task25 Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B
