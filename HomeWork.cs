@@ -80,8 +80,34 @@ internal class HomeWork
         //int[,] newArray62 = hw8.createTwoDimensionalArray(4, 4);
         //hw8.printTwoDimensionalArray0(hw8.fillingSpiral(newArray62));
 
+        // HomeWork 9
+        HomeWork9 hw9 = new HomeWork9();
+        //Task64 если написать false (или ничего не писать) то будет 64 задача, написать True будет и 66
+        Console.WriteLine("enter the starting number");
+        int numberBegin = int.Parse(Console.ReadLine());
+        Console.WriteLine("enter the ending number");
+        int numberEnd = int.Parse(Console.ReadLine());
+        int[] newArray64 = hw9.createArray64(numberBegin, numberEnd);
+        if (numberBegin < numberEnd)
+        {
+            hw9.naturalNumbers(newArray64, numberBegin, numberEnd, false);
+        }
+        else
+        {
+            hw9.naturalNumbers(newArray64, numberEnd, numberBegin, false);
+        }
 
-
+        //Task66
+        if (numberBegin < numberEnd)
+        {
+            hw9.naturalNumbers66(newArray64, numberBegin, numberEnd);
+        }
+        else
+        {
+            hw9.naturalNumbers66(newArray64, numberEnd, numberBegin);
+        }
+        //Task68
+        hw9.ackermannFunctionStart(numberBegin,numberEnd);
 
     }
 
